@@ -1,7 +1,7 @@
 /* Style the video: 100% width and height to cover the entire window */
 body {
   font-family: 'Hammersmith One', sans-serif;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 .navbar {
   position: absolute;
@@ -529,7 +529,10 @@ ul li {
 /******CSS media query breakpoints*******/
 
 @media (max-width: 992px) {
-
+  body {
+    overflow-x: hidden !important;
+    width: 100%;
+  }
   .navbar {
     margin-left: 61%;
   }
@@ -619,6 +622,19 @@ ul li {
   .card-p img {
     width: 100% !important;
     border-radius: 5px 5px 0 0;
+  }
+
+  .video-container {
+    overflow-x: hidden !important;
+    width: 100% !important;
+  }
+  .color-overlay {
+    overflow-x: hidden !important;
+    width:  100% !important;
+  }
+  .section {
+    overflow-x: hidden !important;
+    width: 100% !important;
   }
  
 
